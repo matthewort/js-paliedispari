@@ -12,6 +12,7 @@ var inputUnoCinque = prompt("inserisci un numero da 1 a 5");
 console.log(inputUnoCinque); // numero che inserisco io
 console.log(numeroRandom(inputUnoCinque)); // numero che inserisce il computer
 console.log(somma(inputUnoCinque));
+console.log(risultato(inputUnoCinque));
 
 
 // funzione per generare numeri random
@@ -21,8 +22,16 @@ return Math.floor(Math.random() * 5) + 1;
 
 // funzione per far ritornare se la somma è pari o dispari
 function somma(sum) {
-var somma = " ";
+var somma = "";
 somma = somma + inputUnoCinque + numeroRandom(inputUnoCinque);
+return somma;
 }
 
 // funzione se è pari o dispari
+function risultato(result) {
+if (somma % 2 == 0) {
+return console.log("il risultato è pari")
+} else {
+  return console.log("il risultato è dispari")
+}
+}
