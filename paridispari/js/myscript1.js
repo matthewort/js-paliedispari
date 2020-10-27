@@ -29,9 +29,9 @@ return somma;
 
 // funzione se è pari o dispari
 function risultato(result) {
-if (somma % 2 == 0) {
-return console.log("il risultato è pari")
+if (somma == 0) { // % 2 === 0 per qualche motivo non funziona (?)
+return console.log("il risultato è pari");
 } else {
-  return console.log("il risultato è dispari")
+  return console.log("il risultato è dispari");
 }
 }
